@@ -5,7 +5,17 @@ body {
     margin: 0;
     font-family: "Maven Pro", sans-serif;
 }
-
+.alert-info{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(214,254,254);
+    text-decoration: none;
+    border: 1px solid lightgrey;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 h1 {
     font-size: 3em;
     text-align: center;
@@ -28,17 +38,6 @@ li {
     text-align: center;
     width: 339px;
 
-}
-.alert-info{
-    width: 90%;
-    height: 50px;
-    background-color: rgb(214,254,254);
-    text-decoration: none;
-    border: 1px solid lightgrey;
-    margin: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 a[href='#main'] {
     color: black;
@@ -78,3 +77,20 @@ footer {
     justify-content: flex-end;
 }
 
+@media screen and (min-width: 992px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+    h1, nav {
+        display: inline-flex;
+        flex-direction: row;
+        /*align-items: center;*/
+        /*justify-content: space-evenly;*/
+        /*margin: 0;*/
+    }
+
+    /*nav {*/
+    /*    display: inline;*/
+    /*}*/
+
+}
